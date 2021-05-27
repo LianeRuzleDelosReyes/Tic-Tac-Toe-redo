@@ -29,6 +29,7 @@ namespace Tic_Tac_Toe_redo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TicTacToe));
             this.A1 = new System.Windows.Forms.Button();
             this.B1 = new System.Windows.Forms.Button();
             this.C1 = new System.Windows.Forms.Button();
@@ -194,6 +195,9 @@ namespace Tic_Tac_Toe_redo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(363, 348);
             this.Controls.Add(this.Drawn);
             this.Controls.Add(this.OWin);
@@ -210,8 +214,10 @@ namespace Tic_Tac_Toe_redo
             this.Controls.Add(this.C1);
             this.Controls.Add(this.B1);
             this.Controls.Add(this.A1);
+            this.MaximizeBox = false;
             this.Name = "TicTacToe";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
             this.Load += new System.EventHandler(this.TicTacToe_Load);
             this.ResumeLayout(false);
