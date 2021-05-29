@@ -22,6 +22,7 @@ namespace Tic_Tac_Toe_redo
         public int s1 = 0;
         public int s2 = 0;
         public int sd = 0;
+       
 
         private void button_Click(object sender, EventArgs e)
         {
