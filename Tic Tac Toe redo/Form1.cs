@@ -41,6 +41,7 @@ namespace Tic_Tac_Toe_redo
                     players++;
                     chances++;
                 }
+
                 if(CheckForDraw() == true)
                 {
                     MessageBox.Show("It's a tie", "Sorry");
@@ -130,7 +131,9 @@ namespace Tic_Tac_Toe_redo
 
         private void resetBtn_Click(object sender, EventArgs e)
         {
-            s1 = s2 = sd = 0;
+            s1 = 0;
+            s2 = 0;
+            sd = 0;
             NGame();
 
         }
