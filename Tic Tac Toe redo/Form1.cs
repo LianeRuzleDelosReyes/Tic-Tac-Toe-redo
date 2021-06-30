@@ -22,7 +22,6 @@ namespace Tic_Tac_Toe_redo
         public int s1 = 0;
         public int s2 = 0;
         public int sd = 0;
-       
 
         private void button_Click(object sender, EventArgs e)
         {
@@ -46,8 +45,7 @@ namespace Tic_Tac_Toe_redo
                 {
                     MessageBox.Show("It's a tie", "Sorry");
                     sd++;
-                    NGame();
-                    
+                    NGame();                    
                 }
 
                 if(CheckForWinner() == true)
@@ -81,7 +79,7 @@ namespace Tic_Tac_Toe_redo
             Drawn.Text = "Draws: " + sd;
         }
 
-        void NGame()
+        private void NGame()
         {
             players = 2;
             chances = 0;
